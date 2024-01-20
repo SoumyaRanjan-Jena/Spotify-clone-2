@@ -15,12 +15,14 @@ body{
 .left{
     width : 25vw;
     padding: 10px;
+    height: 95vh;
 }
 
 .right{
     width : 75vw;
     margin: 16px;
     position: relative;
+    height: 95vh;
 }
 
 
@@ -47,7 +49,7 @@ body{
 }
 
 .library{
-    min-height: 68vh;
+    min-height: 66.5vh;
     position: relative;
 }
 
@@ -151,7 +153,7 @@ body{
 
 .playbar{
     position: fixed;
-    bottom: 50px;
+    bottom: 20px;
     padding: 10px;
     width: 68vw;
     filter: invert(1);
@@ -245,4 +247,69 @@ body{
     width: 33%;
     position: absolute;
     left:410px;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburgerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+}
+
+.close{
+    display: none;
+}
+
+@media (max-width: 1100px){
+    .left{
+        position: absolute;
+        left: -120%;
+        transition: all .3s;
+        z-index: 1;
+        width: 95vw;
+        background-color: black;
+    }
+
+    .right{
+        width: 100vw;
+        margin: 0;
+    }
+
+    .songinfo{
+        width: 100px;
+        font-size: 10px;
+    }
+    .songtime{
+        font-size: 15px;
+    }
+    .songbuttons{
+        left: 140px;
+    }
+    
+
+    .playbar{
+        width: calc(100vw - 60px);
+        bottom: 35px;
+    }
+    .seekbar{
+        width: calc(100vw - 60px);
+    }
+    .hamburger {
+        display: block;
+    }
+    .close{
+        display: block;
+    }
+    
+    .card{
+        width: 82vw;
+    }
+    .cardContainer{
+        margin: 0;
+    }
 }
