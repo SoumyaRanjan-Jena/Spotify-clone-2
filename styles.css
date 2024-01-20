@@ -105,6 +105,7 @@ body{
 }
 .card img{
     width: 100%;
+    height: auto;
     object-fit: contain;
     transition: all 1s;
 }
