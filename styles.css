@@ -93,7 +93,7 @@ body{
     max-height: 50vh;
 }
 .card{
-    width : 200px;
+    width : 250px;
     padding: 10px;
     border-radius: 9px;
     background-color: #252525;
@@ -256,8 +256,8 @@ body{
 }
 .songbuttons{
     width: 33%;
-    position: absolute;
-    left:410px;
+    /* position: absolute;
+    left:410px; */
 }
 
 .hamburger {
@@ -296,14 +296,15 @@ body{
     }
 
     .songinfo{
-        width: 100px;
+        max-width: 15vw;
         font-size: 10px;
     }
     .songtime{
         font-size: 15px;
     }
     .songbuttons{
-        left: 140px;
+        padding: 5px;
+        margin-right: 5px;
     }
     
 
