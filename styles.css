@@ -90,7 +90,7 @@ body{
     flex-wrap: wrap;
     gap: 10px;
     overflow-y: scroll;
-    max-height: 70vh;
+    max-height: 50vh;
 }
 .card{
     width : 200px;
@@ -291,6 +291,10 @@ body{
         margin: 0;
     }
 
+    .play{
+        z-index: -1;
+    }
+
     .songinfo{
         width: 100px;
         font-size: 10px;
@@ -322,5 +326,9 @@ body{
     }
     .cardContainer{
         margin: 0;
+        height: 100%;
+    }
+    .spotifyPlaylist{
+        height: 70vh;
     }
 }
